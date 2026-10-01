@@ -1,0 +1,54 @@
+{
+  "steps": [
+    {
+      "step": "spawn",
+      "conn_type": "ClientSideConnection",
+      "has_send_request": false
+    },
+    {
+      "step": "initialize",
+      "protocol_version": null
+    },
+    {
+      "step": "session/new",
+      "sessionId": "mvs_140978a08eb14374864e768c786f48af",
+      "configOption_ids": [],
+      "modes": {
+        "field_meta": null,
+        "available_modes": [
+          {
+            "field_meta": null,
+            "description": "Work normally with the configured tools and permission policy.",
+            "id": "default",
+            "name": "Default"
+          },
+          {
+            "field_meta": null,
+            "description": "Research and prepare an implementation plan before making changes.",
+            "id": "plan",
+            "name": "Plan"
+          }
+        ],
+        "current_mode_id": "default"
+      }
+    },
+    {
+      "step": "session/prompt",
+      "stopReason": null,
+      "pong_seen": false,
+      "frames": 1
+    },
+    {
+      "step": "setConfigOption.permissionMode=auto",
+      "error": "'NoneType' object is not callable"
+    },
+    {
+      "step": "session/list",
+      "error": "'NoneType' object is not callable"
+    },
+    {
+      "step": "session/close",
+      "error": "'NoneType' object is not callable"
+    }
+  ]
+}

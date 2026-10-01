@@ -26,7 +26,7 @@ import styles from "./AgentBackendFields.module.less";
 
 const POLL_INTERVAL_MS = 2_000;
 
-type ProviderId = "codex" | "qoder";
+type ProviderId = "codex" | "qoder" | "minimax";
 
 interface ProviderOption {
   id: ProviderId;
@@ -68,6 +68,19 @@ const PROVIDERS: ProviderOption[] = [
     notFoundKey: "agent.backend.qoderNotFound",
     authHintKey: "agent.backend.qoderAuthHint",
     connectKey: "agent.backend.qoderConnect",
+  },
+  {
+    id: "minimax",
+    name: "MiniMax Code",
+    hintKey: "agent.backend.minimaxHint",
+    accountKey: "agent.backend.minimaxAccount",
+    binaryKey: "agent.backend.minimaxBinary",
+    binaryHelpKey: "agent.backend.minimaxBinaryHelp",
+    binaryPlaceholderKey: "agent.backend.minimaxBinaryPlaceholder",
+    detectedKey: "agent.backend.minimaxDetectedBinary",
+    notFoundKey: "agent.backend.minimaxNotFound",
+    authHintKey: "agent.backend.minimaxAuthHint",
+    connectKey: "agent.backend.minimaxConnect",
   },
 ];
 

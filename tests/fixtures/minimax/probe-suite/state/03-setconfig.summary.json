@@ -1,0 +1,3364 @@
+{
+  "probe": "03-setconfig",
+  "ok": true,
+  "steps": [
+    {
+      "permissionMode->default": {
+        "configId": "permissionMode",
+        "value": "default",
+        "ok": true,
+        "response_configOptions": [
+          {
+            "currentValue": "default",
+            "options": [
+              {
+                "name": "Ask",
+                "value": "default"
+              },
+              {
+                "name": "Auto",
+                "value": "auto"
+              },
+              {
+                "name": "Full access",
+                "value": "bypassPermissions"
+              }
+            ],
+            "_meta": {
+              "minimax-code/scope": "process"
+            },
+            "category": "_permission",
+            "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+            "id": "permissionMode",
+            "name": "Permission mode",
+            "type": "select"
+          },
+          {
+            "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+            "options": [
+              {
+                "name": "M3.1-Flash-Preview",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+              },
+              {
+                "name": "M3.1-Flash-Preview · thinking",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+              },
+              {
+                "name": "M3",
+                "value": "m:minimax:MiniMax-M3:v:"
+              },
+              {
+                "name": "M3 · thinking",
+                "value": "m:minimax:MiniMax-M3:v:thinking"
+              },
+              {
+                "name": "M2.7-highspeed · thinking",
+                "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+              },
+              {
+                "name": "M2.7 · thinking",
+                "value": "m:minimax:MiniMax-M2.7:v:thinking"
+              }
+            ],
+            "category": "model",
+            "description": "Selects the model used by subsequent turns in this Session.",
+            "id": "model",
+            "name": "Model",
+            "type": "select"
+          }
+        ],
+        "current_value_after": "default",
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "permissionMode->auto": {
+        "configId": "permissionMode",
+        "value": "auto",
+        "ok": true,
+        "response_configOptions": [
+          {
+            "currentValue": "auto",
+            "options": [
+              {
+                "name": "Ask",
+                "value": "default"
+              },
+              {
+                "name": "Auto",
+                "value": "auto"
+              },
+              {
+                "name": "Full access",
+                "value": "bypassPermissions"
+              }
+            ],
+            "_meta": {
+              "minimax-code/scope": "process"
+            },
+            "category": "_permission",
+            "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+            "id": "permissionMode",
+            "name": "Permission mode",
+            "type": "select"
+          },
+          {
+            "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+            "options": [
+              {
+                "name": "M3.1-Flash-Preview",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+              },
+              {
+                "name": "M3.1-Flash-Preview · thinking",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+              },
+              {
+                "name": "M3",
+                "value": "m:minimax:MiniMax-M3:v:"
+              },
+              {
+                "name": "M3 · thinking",
+                "value": "m:minimax:MiniMax-M3:v:thinking"
+              },
+              {
+                "name": "M2.7-highspeed · thinking",
+                "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+              },
+              {
+                "name": "M2.7 · thinking",
+                "value": "m:minimax:MiniMax-M2.7:v:thinking"
+              }
+            ],
+            "category": "model",
+            "description": "Selects the model used by subsequent turns in this Session.",
+            "id": "model",
+            "name": "Model",
+            "type": "select"
+          }
+        ],
+        "current_value_after": "auto",
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "auto",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "permissionMode->bypassPermissions": {
+        "configId": "permissionMode",
+        "value": "bypassPermissions",
+        "ok": true,
+        "response_configOptions": [
+          {
+            "currentValue": "bypassPermissions",
+            "options": [
+              {
+                "name": "Ask",
+                "value": "default"
+              },
+              {
+                "name": "Auto",
+                "value": "auto"
+              },
+              {
+                "name": "Full access",
+                "value": "bypassPermissions"
+              }
+            ],
+            "_meta": {
+              "minimax-code/scope": "process"
+            },
+            "category": "_permission",
+            "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+            "id": "permissionMode",
+            "name": "Permission mode",
+            "type": "select"
+          },
+          {
+            "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+            "options": [
+              {
+                "name": "M3.1-Flash-Preview",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+              },
+              {
+                "name": "M3.1-Flash-Preview · thinking",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+              },
+              {
+                "name": "M3",
+                "value": "m:minimax:MiniMax-M3:v:"
+              },
+              {
+                "name": "M3 · thinking",
+                "value": "m:minimax:MiniMax-M3:v:thinking"
+              },
+              {
+                "name": "M2.7-highspeed · thinking",
+                "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+              },
+              {
+                "name": "M2.7 · thinking",
+                "value": "m:minimax:MiniMax-M2.7:v:thinking"
+              }
+            ],
+            "category": "model",
+            "description": "Selects the model used by subsequent turns in this Session.",
+            "id": "model",
+            "name": "Model",
+            "type": "select"
+          }
+        ],
+        "current_value_after": "bypassPermissions",
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "auto",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "bypassPermissions",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "permissionMode->default": {
+        "configId": "permissionMode",
+        "value": "default",
+        "ok": true,
+        "response_configOptions": [
+          {
+            "currentValue": "default",
+            "options": [
+              {
+                "name": "Ask",
+                "value": "default"
+              },
+              {
+                "name": "Auto",
+                "value": "auto"
+              },
+              {
+                "name": "Full access",
+                "value": "bypassPermissions"
+              }
+            ],
+            "_meta": {
+              "minimax-code/scope": "process"
+            },
+            "category": "_permission",
+            "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+            "id": "permissionMode",
+            "name": "Permission mode",
+            "type": "select"
+          },
+          {
+            "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+            "options": [
+              {
+                "name": "M3.1-Flash-Preview",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+              },
+              {
+                "name": "M3.1-Flash-Preview · thinking",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+              },
+              {
+                "name": "M3",
+                "value": "m:minimax:MiniMax-M3:v:"
+              },
+              {
+                "name": "M3 · thinking",
+                "value": "m:minimax:MiniMax-M3:v:thinking"
+              },
+              {
+                "name": "M2.7-highspeed · thinking",
+                "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+              },
+              {
+                "name": "M2.7 · thinking",
+                "value": "m:minimax:MiniMax-M2.7:v:thinking"
+              }
+            ],
+            "category": "model",
+            "description": "Selects the model used by subsequent turns in this Session.",
+            "id": "model",
+            "name": "Model",
+            "type": "select"
+          }
+        ],
+        "current_value_after": "default",
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "auto",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "bypassPermissions",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "model->empty-variant-advertised": {
+        "configId": "model",
+        "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:",
+        "ok": false,
+        "error": {
+          "code": -32603,
+          "message": "Internal error",
+          "data": {
+            "details": "Invalid model reasoning"
+          }
+        },
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "auto",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "bypassPermissions",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "model->different": {
+        "configId": "model",
+        "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+        "ok": true,
+        "response_configOptions": [
+          {
+            "currentValue": "default",
+            "options": [
+              {
+                "name": "Ask",
+                "value": "default"
+              },
+              {
+                "name": "Auto",
+                "value": "auto"
+              },
+              {
+                "name": "Full access",
+                "value": "bypassPermissions"
+              }
+            ],
+            "_meta": {
+              "minimax-code/scope": "process"
+            },
+            "category": "_permission",
+            "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+            "id": "permissionMode",
+            "name": "Permission mode",
+            "type": "select"
+          },
+          {
+            "currentValue": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+            "options": [
+              {
+                "name": "M3.1-Flash-Preview",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+              },
+              {
+                "name": "M3.1-Flash-Preview · thinking",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+              },
+              {
+                "name": "M3",
+                "value": "m:minimax:MiniMax-M3:v:"
+              },
+              {
+                "name": "M3 · thinking",
+                "value": "m:minimax:MiniMax-M3:v:thinking"
+              },
+              {
+                "name": "M2.7-highspeed · thinking",
+                "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+              },
+              {
+                "name": "M2.7 · thinking",
+                "value": "m:minimax:MiniMax-M2.7:v:thinking"
+              }
+            ],
+            "category": "model",
+            "description": "Selects the model used by subsequent turns in this Session.",
+            "id": "model",
+            "name": "Model",
+            "type": "select"
+          },
+          {
+            "currentValue": "default",
+            "options": [
+              {
+                "name": "Default",
+                "value": "default"
+              },
+              {
+                "name": "Low",
+                "value": "low"
+              },
+              {
+                "name": "Medium",
+                "value": "medium"
+              },
+              {
+                "name": "High",
+                "value": "high"
+              },
+              {
+                "name": "Xhigh",
+                "value": "xhigh"
+              },
+              {
+                "name": "Max",
+                "value": "max"
+              }
+            ],
+            "category": "thought_level",
+            "description": "Controls the reasoning effort for the selected model in this Session.",
+            "id": "thinkingEffort",
+            "name": "Thinking effort",
+            "type": "select"
+          }
+        ],
+        "current_value_after": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "auto",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "bypassPermissions",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "model->restore": {
+        "configId": "model",
+        "value": "m:minimax:MiniMax-M3:v:thinking",
+        "ok": true,
+        "response_configOptions": [
+          {
+            "currentValue": "default",
+            "options": [
+              {
+                "name": "Ask",
+                "value": "default"
+              },
+              {
+                "name": "Auto",
+                "value": "auto"
+              },
+              {
+                "name": "Full access",
+                "value": "bypassPermissions"
+              }
+            ],
+            "_meta": {
+              "minimax-code/scope": "process"
+            },
+            "category": "_permission",
+            "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+            "id": "permissionMode",
+            "name": "Permission mode",
+            "type": "select"
+          },
+          {
+            "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+            "options": [
+              {
+                "name": "M3.1-Flash-Preview",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+              },
+              {
+                "name": "M3.1-Flash-Preview · thinking",
+                "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+              },
+              {
+                "name": "M3",
+                "value": "m:minimax:MiniMax-M3:v:"
+              },
+              {
+                "name": "M3 · thinking",
+                "value": "m:minimax:MiniMax-M3:v:thinking"
+              },
+              {
+                "name": "M2.7-highspeed · thinking",
+                "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+              },
+              {
+                "name": "M2.7 · thinking",
+                "value": "m:minimax:MiniMax-M2.7:v:thinking"
+              }
+            ],
+            "category": "model",
+            "description": "Selects the model used by subsequent turns in this Session.",
+            "id": "model",
+            "name": "Model",
+            "type": "select"
+          }
+        ],
+        "current_value_after": "m:minimax:MiniMax-M3:v:thinking",
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "bypassPermissions",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              },
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Low",
+                    "value": "low"
+                  },
+                  {
+                    "name": "Medium",
+                    "value": "medium"
+                  },
+                  {
+                    "name": "High",
+                    "value": "high"
+                  },
+                  {
+                    "name": "Xhigh",
+                    "value": "xhigh"
+                  },
+                  {
+                    "name": "Max",
+                    "value": "max"
+                  }
+                ],
+                "category": "thought_level",
+                "description": "Controls the reasoning effort for the selected model in this Session.",
+                "id": "thinkingEffort",
+                "name": "Thinking effort",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "thinkingEffort-blind->low": {
+        "configId": "thinkingEffort",
+        "value": "low",
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params: Thinking effort is not advertised for the selected model: low",
+          "data": null
+        },
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              },
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Low",
+                    "value": "low"
+                  },
+                  {
+                    "name": "Medium",
+                    "value": "medium"
+                  },
+                  {
+                    "name": "High",
+                    "value": "high"
+                  },
+                  {
+                    "name": "Xhigh",
+                    "value": "xhigh"
+                  },
+                  {
+                    "name": "Max",
+                    "value": "max"
+                  }
+                ],
+                "category": "thought_level",
+                "description": "Controls the reasoning effort for the selected model in this Session.",
+                "id": "thinkingEffort",
+                "name": "Thinking effort",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "thinkingEffort-blind->medium": {
+        "configId": "thinkingEffort",
+        "value": "medium",
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params: Thinking effort is not advertised for the selected model: medium",
+          "data": null
+        },
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              },
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Low",
+                    "value": "low"
+                  },
+                  {
+                    "name": "Medium",
+                    "value": "medium"
+                  },
+                  {
+                    "name": "High",
+                    "value": "high"
+                  },
+                  {
+                    "name": "Xhigh",
+                    "value": "xhigh"
+                  },
+                  {
+                    "name": "Max",
+                    "value": "max"
+                  }
+                ],
+                "category": "thought_level",
+                "description": "Controls the reasoning effort for the selected model in this Session.",
+                "id": "thinkingEffort",
+                "name": "Thinking effort",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "thinkingEffort-blind->high": {
+        "configId": "thinkingEffort",
+        "value": "high",
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params: Thinking effort is not advertised for the selected model: high",
+          "data": null
+        },
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              },
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Low",
+                    "value": "low"
+                  },
+                  {
+                    "name": "Medium",
+                    "value": "medium"
+                  },
+                  {
+                    "name": "High",
+                    "value": "high"
+                  },
+                  {
+                    "name": "Xhigh",
+                    "value": "xhigh"
+                  },
+                  {
+                    "name": "Max",
+                    "value": "max"
+                  }
+                ],
+                "category": "thought_level",
+                "description": "Controls the reasoning effort for the selected model in this Session.",
+                "id": "thinkingEffort",
+                "name": "Thinking effort",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "thinkingEffort-blind->minimal": {
+        "configId": "thinkingEffort",
+        "value": "minimal",
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params: Thinking effort is not advertised for the selected model: minimal",
+          "data": null
+        },
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              },
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Low",
+                    "value": "low"
+                  },
+                  {
+                    "name": "Medium",
+                    "value": "medium"
+                  },
+                  {
+                    "name": "High",
+                    "value": "high"
+                  },
+                  {
+                    "name": "Xhigh",
+                    "value": "xhigh"
+                  },
+                  {
+                    "name": "Max",
+                    "value": "max"
+                  }
+                ],
+                "category": "thought_level",
+                "description": "Controls the reasoning effort for the selected model in this Session.",
+                "id": "thinkingEffort",
+                "name": "Thinking effort",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "thinkingEffort-blind->none": {
+        "configId": "thinkingEffort",
+        "value": "none",
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params: Thinking effort is not advertised for the selected model: none",
+          "data": null
+        },
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              },
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Low",
+                    "value": "low"
+                  },
+                  {
+                    "name": "Medium",
+                    "value": "medium"
+                  },
+                  {
+                    "name": "High",
+                    "value": "high"
+                  },
+                  {
+                    "name": "Xhigh",
+                    "value": "xhigh"
+                  },
+                  {
+                    "name": "Max",
+                    "value": "max"
+                  }
+                ],
+                "category": "thought_level",
+                "description": "Controls the reasoning effort for the selected model in this Session.",
+                "id": "thinkingEffort",
+                "name": "Thinking effort",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "invalid-configId-bogus": {
+        "configId": "bogus",
+        "value": "x",
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params: Unsupported Session configuration option: bogus",
+          "data": null
+        },
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              },
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Low",
+                    "value": "low"
+                  },
+                  {
+                    "name": "Medium",
+                    "value": "medium"
+                  },
+                  {
+                    "name": "High",
+                    "value": "high"
+                  },
+                  {
+                    "name": "Xhigh",
+                    "value": "xhigh"
+                  },
+                  {
+                    "name": "Max",
+                    "value": "max"
+                  }
+                ],
+                "category": "thought_level",
+                "description": "Controls the reasoning effort for the selected model in this Session.",
+                "id": "thinkingEffort",
+                "name": "Thinking effort",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    },
+    {
+      "invalid-model-not-a-model": {
+        "configId": "model",
+        "value": "not-a-model",
+        "ok": false,
+        "error": {
+          "code": -32602,
+          "message": "Invalid params: Invalid model config value: not-a-model",
+          "data": null
+        },
+        "notifications_after": [
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              },
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Default",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Low",
+                    "value": "low"
+                  },
+                  {
+                    "name": "Medium",
+                    "value": "medium"
+                  },
+                  {
+                    "name": "High",
+                    "value": "high"
+                  },
+                  {
+                    "name": "Xhigh",
+                    "value": "xhigh"
+                  },
+                  {
+                    "name": "Max",
+                    "value": "max"
+                  }
+                ],
+                "category": "thought_level",
+                "description": "Controls the reasoning effort for the selected model in this Session.",
+                "id": "thinkingEffort",
+                "name": "Thinking effort",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          },
+          {
+            "configOptions": [
+              {
+                "currentValue": "default",
+                "options": [
+                  {
+                    "name": "Ask",
+                    "value": "default"
+                  },
+                  {
+                    "name": "Auto",
+                    "value": "auto"
+                  },
+                  {
+                    "name": "Full access",
+                    "value": "bypassPermissions"
+                  }
+                ],
+                "_meta": {
+                  "minimax-code/scope": "process"
+                },
+                "category": "_permission",
+                "description": "Controls how MiniMax Code handles tool permission requests in this process.",
+                "id": "permissionMode",
+                "name": "Permission mode",
+                "type": "select"
+              },
+              {
+                "currentValue": "m:minimax:MiniMax-M3:v:thinking",
+                "options": [
+                  {
+                    "name": "M3.1-Flash-Preview",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:"
+                  },
+                  {
+                    "name": "M3.1-Flash-Preview · thinking",
+                    "value": "m:minimax:MiniMax-M3.1-Flash-Preview:v:thinking"
+                  },
+                  {
+                    "name": "M3",
+                    "value": "m:minimax:MiniMax-M3:v:"
+                  },
+                  {
+                    "name": "M3 · thinking",
+                    "value": "m:minimax:MiniMax-M3:v:thinking"
+                  },
+                  {
+                    "name": "M2.7-highspeed · thinking",
+                    "value": "m:minimax:MiniMax-M2.7-highspeed:v:thinking"
+                  },
+                  {
+                    "name": "M2.7 · thinking",
+                    "value": "m:minimax:MiniMax-M2.7:v:thinking"
+                  }
+                ],
+                "category": "model",
+                "description": "Selects the model used by subsequent turns in this Session.",
+                "id": "model",
+                "name": "Model",
+                "type": "select"
+              }
+            ],
+            "sessionUpdate": "config_option_update"
+          }
+        ]
+      }
+    }
+  ],
+  "session_id": "mvs_571c86773234437db4be192e07376389",
+  "config_ids_observed": [
+    "permissionMode",
+    "model"
+  ],
+  "permissionMode_values_observed": [
+    "default",
+    "auto",
+    "bypassPermissions"
+  ],
+  "permissionMode_initial": "default",
+  "model_values_observed_count": 6,
+  "model_initial": "m:minimax:MiniMax-M3:v:thinking",
+  "model_initial_is_m_format": true,
+  "thinkingEffort_values_observed": [],
+  "thinkingEffort_initial": null
+}

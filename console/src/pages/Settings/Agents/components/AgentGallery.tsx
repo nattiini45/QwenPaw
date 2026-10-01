@@ -31,6 +31,7 @@ import { useTranslation } from "react-i18next";
 import { SharedModal } from "@/components/interaction/SharedModal";
 import { AgentStatusIndicator } from "@/components/AgentStatusIndicator";
 import { getAgentDisplayName } from "@/utils/agentDisplayName";
+import { backendDisplayName } from "@/utils/agentBackend";
 import type { AgentSummary } from "@/api/types/agents";
 import styles from "./AgentGallery.module.less";
 
@@ -88,7 +89,7 @@ const AgentTile = memo(function AgentTile({
             status={agent.startup_status}
             enabled={agent.enabled}
           />
-          <span>{agent.backend === "qwenpaw" ? "QwenPaw" : agent.backend}</span>
+          <span>{backendDisplayName(agent.backend)}</span>
           <Button
             type="text"
             aria-label={t(agent.pinned ? "agent.unpinAgent" : "agent.pinAgent")}

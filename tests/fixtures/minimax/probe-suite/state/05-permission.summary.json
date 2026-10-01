@@ -1,0 +1,114 @@
+{
+  "probe": "05-permission",
+  "ok": true,
+  "session_id": "mvs_ae3294c039d4468888923e61156ebd20",
+  "permissionMode_set_default_ok": true,
+  "permissionMode_after": "default",
+  "phase1_stop_reason": "end_turn",
+  "phase1_permission_requests": [],
+  "phase1_update_types": [
+    "available_commands_update",
+    "config_option_update",
+    "available_commands_update",
+    "available_commands_update",
+    "session_info_update",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_message_chunk",
+    "agent_message_chunk",
+    "agent_message_chunk",
+    "tool_call",
+    "tool_call_update",
+    "tool_call_update"
+  ],
+  "phase1_file_exists_after_deny": true,
+  "phase1_assistant_text": "Creating the file now.Let me verify the file contents.Done. Created [perm-test.txt](/root/mcode-probes/perm-test.txt) containing the word `hello` (5 bytes).",
+  "phase2_stop_reason": "end_turn",
+  "phase2_permission_requests": [],
+  "phase2_tool_call_titles": [
+    "bash"
+  ],
+  "phase2_file_exists_after_allow": true,
+  "phase2_file_content": "hello",
+  "phase2_client_fs_events": [],
+  "phase3_stop_reason": "end_turn",
+  "phase3_permission_requests": [
+    {
+      "options": [
+        {
+          "kind": "allow_once",
+          "name": "Allow once",
+          "optionId": "allow-once"
+        },
+        {
+          "kind": "allow_always",
+          "name": "Always allow",
+          "optionId": "allow-always"
+        },
+        {
+          "kind": "reject_once",
+          "name": "Deny",
+          "optionId": "deny"
+        }
+      ],
+      "toolCall": {
+        "kind": "edit",
+        "locations": [
+          {
+            "path": "/tmp/mcode-probe-outside.txt"
+          }
+        ],
+        "rawInput": {
+          "path": "/tmp/mcode-probe-outside.txt",
+          "content": "hello"
+        },
+        "status": "pending",
+        "title": "write",
+        "toolCallId": "perm_404df6086ebf4f6f9afd0eea00bf9722"
+      },
+      "answered_with": {
+        "optionId": "deny",
+        "outcome": "selected"
+      }
+    }
+  ],
+  "phase3_file_exists_after_deny": false,
+  "phase3_assistant_text": "path.Permission denied — the runtime blocked the write because `/tmp/mcode-probe-outside.txt` is outside the workspace (`/root/mcode-probes`) and the configured allow paths. The file was not created.\n\nIf you want to proceed, options:\n1. Run the write yourself from a shell: `echo hello > /tmp/mcode-probe-outside.txt`\n2. Confirm explicitly that `/tmp` should be added to the allow list for this session.\n3. Use a path inside the workspace instead (e.g., `/root/mcode-probes/mcode-probe-outside.txt`).",
+  "phase3_tool_kinds": [
+    "edit"
+  ],
+  "phase4_stop_reason": "end_turn",
+  "phase4_permission_requests": [],
+  "phase4_file_exists_after_allow": false,
+  "phase4_file_content": null,
+  "phase5_stop_reason": "end_turn",
+  "phase5_permission_requests": [],
+  "cleanup_removed_perm_test": true
+}

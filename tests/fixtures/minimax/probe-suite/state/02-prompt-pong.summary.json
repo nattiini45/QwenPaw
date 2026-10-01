@@ -1,0 +1,48 @@
+{
+  "probe": "02-prompt-pong",
+  "ok": true,
+  "session_id": "mvs_bb77c1ec78144d3daf4fdc6104c86b4a",
+  "stop_reason": "end_turn",
+  "stop_reason_wire_enum": "end_turn",
+  "user_message_id": null,
+  "prompt_response_usage": null,
+  "update_type_counts": {
+    "agent_message_chunk": 1,
+    "agent_thought_chunk": 3,
+    "available_commands_update": 3,
+    "session_info_update": 2,
+    "usage_update": 1
+  },
+  "update_type_sequence_first30": [
+    "available_commands_update",
+    "available_commands_update",
+    "available_commands_update",
+    "session_info_update",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_message_chunk",
+    "session_info_update",
+    "usage_update"
+  ],
+  "first_agent_message_chunk": {
+    "content": {
+      "text": "PONG",
+      "type": "text"
+    },
+    "messageId": "af16deae-3824-4896-ab01-9ee0af23df67",
+    "sessionUpdate": "agent_message_chunk"
+  },
+  "usage_update_notifications": [
+    {
+      "cost": {
+        "amount": 0.0,
+        "currency": "USD"
+      },
+      "size": 512000,
+      "used": 22639,
+      "sessionUpdate": "usage_update"
+    }
+  ],
+  "assistant_text": "PONG"
+}

@@ -1,0 +1,24 @@
+{
+  "probe": "07-usage-cost",
+  "ok": true,
+  "session_id": "mvs_24fc844fec2045d39a3a56c001d72ff7",
+  "stop_reason": "end_turn",
+  "prompt_response_usage": null,
+  "usage_update_count": 1,
+  "usage_updates_verbatim": [
+    {
+      "cost": {
+        "amount": 0.0,
+        "currency": "USD"
+      },
+      "size": 512000,
+      "used": 16847,
+      "sessionUpdate": "usage_update"
+    }
+  ],
+  "usage_update_field_names": [
+    "cost",
+    "size",
+    "used"
+  ]
+}

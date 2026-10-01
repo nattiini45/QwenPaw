@@ -1,0 +1,179 @@
+{
+  "probe": "04-sessions",
+  "ok": true,
+  "p2_session_id": "mvs_bb77c1ec78144d3daf4fdc6104c86b4a",
+  "session_list_response": {
+    "sessions": [
+      {
+        "cwd": "/root/mcode-probes",
+        "sessionId": "mvs_bb77c1ec78144d3daf4fdc6104c86b4a",
+        "updatedAt": "2026-10-01T11:52:43.820Z"
+      },
+      {
+        "cwd": "/root/mcode-probes",
+        "sessionId": "mvs_571c86773234437db4be192e07376389",
+        "updatedAt": "2026-10-01T11:51:37.431Z"
+      },
+      {
+        "cwd": "/root/mcode-probes",
+        "sessionId": "mvs_5ac73e06dc5e4a9589621f3b3ff544d5",
+        "updatedAt": "2026-10-01T11:51:09.037Z"
+      },
+      {
+        "cwd": "/root/mcode-probes",
+        "sessionId": "mvs_69f602594f794c70bb5126e53f945850",
+        "updatedAt": "2026-10-01T11:49:52.659Z"
+      },
+      {
+        "cwd": "/root/mcode-probes",
+        "sessionId": "mvs_369abdb624f94ab6b1812292ec2afa88",
+        "updatedAt": "2026-10-01T11:49:19.397Z"
+      },
+      {
+        "cwd": "/root/mcode-probes",
+        "sessionId": "mvs_904a9875027e4bc89805e3929fddc20f",
+        "updatedAt": "2026-10-01T11:48:09.818Z"
+      }
+    ]
+  },
+  "session_list_count": 6,
+  "session_list_first_items": [
+    {
+      "cwd": "/root/mcode-probes",
+      "sessionId": "mvs_bb77c1ec78144d3daf4fdc6104c86b4a",
+      "updatedAt": "2026-10-01T11:52:43.820Z"
+    },
+    {
+      "cwd": "/root/mcode-probes",
+      "sessionId": "mvs_571c86773234437db4be192e07376389",
+      "updatedAt": "2026-10-01T11:51:37.431Z"
+    },
+    {
+      "cwd": "/root/mcode-probes",
+      "sessionId": "mvs_5ac73e06dc5e4a9589621f3b3ff544d5",
+      "updatedAt": "2026-10-01T11:51:09.037Z"
+    },
+    {
+      "cwd": "/root/mcode-probes",
+      "sessionId": "mvs_69f602594f794c70bb5126e53f945850",
+      "updatedAt": "2026-10-01T11:49:52.659Z"
+    },
+    {
+      "cwd": "/root/mcode-probes",
+      "sessionId": "mvs_369abdb624f94ab6b1812292ec2afa88",
+      "updatedAt": "2026-10-01T11:49:19.397Z"
+    }
+  ],
+  "session_list_next_cursor": null,
+  "session_load_response": {
+    "modes": {
+      "availableModes": [
+        {
+          "description": "Work normally with the configured tools and permission policy.",
+          "id": "default",
+          "name": "Default"
+        },
+        {
+          "description": "Research and prepare an implementation plan before making changes.",
+          "id": "plan",
+          "name": "Plan"
+        }
+      ],
+      "currentModeId": "default"
+    }
+  },
+  "session_load_response_keys": [
+    "configOptions",
+    "modes"
+  ],
+  "session_load_config_ids": [
+    "permissionMode",
+    "model"
+  ],
+  "replay_frame_count": 9,
+  "replay_first40_types": [
+    "user_message_chunk",
+    "agent_thought_chunk",
+    "agent_message_chunk",
+    "user_message_chunk",
+    "agent_thought_chunk",
+    "agent_message_chunk",
+    "available_commands_update",
+    "available_commands_update",
+    "available_commands_update"
+  ],
+  "replay_first_chunks": [
+    {
+      "kind": "user_message_chunk",
+      "content": {
+        "type": "text",
+        "text": "Reply with exactly: PONG"
+      }
+    },
+    {
+      "kind": "agent_message_chunk",
+      "content": {
+        "type": "text",
+        "text": "PONG"
+      }
+    },
+    {
+      "kind": "user_message_chunk",
+      "content": {
+        "type": "text",
+        "text": "Reply with exactly: ATTACHED"
+      }
+    },
+    {
+      "kind": "agent_message_chunk",
+      "content": {
+        "type": "text",
+        "text": "ATTACHED"
+      }
+    }
+  ],
+  "session_resume_response": {
+    "modes": {
+      "availableModes": [
+        {
+          "description": "Work normally with the configured tools and permission policy.",
+          "id": "default",
+          "name": "Default"
+        },
+        {
+          "description": "Research and prepare an implementation plan before making changes.",
+          "id": "plan",
+          "name": "Plan"
+        }
+      ],
+      "currentModeId": "default"
+    }
+  },
+  "session_resume_response_keys": [
+    "configOptions",
+    "modes"
+  ],
+  "session_resume_config_ids": [
+    "permissionMode",
+    "model"
+  ],
+  "resume_replay_frame_count": 3,
+  "resume_replay_types": [
+    "available_commands_update",
+    "available_commands_update",
+    "available_commands_update"
+  ],
+  "resume_prompt_stop_reason": "end_turn",
+  "resume_prompt_update_types": [
+    "session_info_update",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_thought_chunk",
+    "agent_message_chunk",
+    "session_info_update",
+    "usage_update",
+    "usage_update"
+  ]
+}

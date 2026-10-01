@@ -1,6 +1,23 @@
 import { describe, expect, it } from "vitest";
 
-import { requiresQwenPawModel, supportsAgentAttachments } from "./agentBackend";
+import {
+  backendDisplayName,
+  requiresQwenPawModel,
+  supportsAgentAttachments,
+} from "./agentBackend";
+
+describe("backendDisplayName", () => {
+  it("maps every first-party backend id to its product name", () => {
+    expect(backendDisplayName("qwenpaw")).toBe("QwenPaw");
+    expect(backendDisplayName("codex")).toBe("Codex");
+    expect(backendDisplayName("qoder")).toBe("Qoder");
+    expect(backendDisplayName("minimax")).toBe("MiniMax Code");
+  });
+
+  it("falls back to the raw backend id", () => {
+    expect(backendDisplayName("unknown-backend")).toBe("unknown-backend");
+  });
+});
 
 describe("requiresQwenPawModel", () => {
   it("requires a configured model for native QwenPaw agents", () => {

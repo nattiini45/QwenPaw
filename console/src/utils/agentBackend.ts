@@ -1,6 +1,17 @@
 import type { AgentBackend, AgentSummary } from "../api/types/agents";
 import type { HarnessCapabilities } from "../api/modules/harness";
 
+const BACKEND_DISPLAY_NAMES: Record<string, string> = {
+  qwenpaw: "QwenPaw",
+  codex: "Codex",
+  qoder: "Qoder",
+  minimax: "MiniMax Code",
+};
+
+export function backendDisplayName(backend: AgentBackend): string {
+  return BACKEND_DISPLAY_NAMES[backend] ?? backend;
+}
+
 export function requiresQwenPawModel(backend: AgentBackend): boolean {
   return backend === "qwenpaw";
 }

@@ -120,6 +120,7 @@ describe("AgentBackendFields", () => {
     expect(screen.getByText("Codex")).toBeInTheDocument();
     expect(screen.getByText("Claude Code")).toBeInTheDocument();
     expect(screen.getByText("Qoder")).toBeInTheDocument();
+    expect(screen.getByText("MiniMax Code")).toBeInTheDocument();
   });
 
   it("probes the executable path entered by the user", async () => {

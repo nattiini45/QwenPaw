@@ -1,0 +1,36 @@
+[
+  {
+    "step": "p1.session/new",
+    "sid": "mvs_4e99fb6b598849308fb727b51fdc166c"
+  },
+  {
+    "step": "p1.prompt",
+    "stop": "end_turn"
+  },
+  {
+    "step": "p1.process killed",
+    "pid": 3471907
+  },
+  {
+    "step": "p2.resume_session",
+    "ok": true,
+    "opt_ids": [
+      "permissionMode",
+      "model"
+    ]
+  },
+  {
+    "step": "p2.prompt",
+    "stop": "end_turn",
+    "pong2": true
+  },
+  {
+    "step": "p3.permission_ask",
+    "captured": false,
+    "note": "prompt completed or timeout without ask"
+  },
+  {
+    "step": "p3.session/close",
+    "ok": true
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "step": "initialize",
+    "protocol": 1,
+    "ext_methods": 14
+  },
+  {
+    "step": "session/new",
+    "sid": "mvs_87cba196829542d59d392391ba8f22cc",
+    "opt_ids": [
+      "permissionMode",
+      "model"
+    ]
+  },
+  {
+    "step": "model-option",
+    "value": "m:minimax:MiniMax-M3:v:thinking",
+    "options": 6,
+    "effort_current": null
+  },
+  {
+    "step": "cfg.permissionMode=auto",
+    "ok": true,
+    "current": [
+      "auto"
+    ]
+  },
+  {
+    "step": "cfg.model round-trip",
+    "ok": true,
+    "value": "m:minimax:MiniMax-M3:v:thinking"
+  },
+  {
+    "step": "setMode=plan",
+    "meta": {
+      "minimax-code/transition": "next_prompt"
+    }
+  },
+  {
+    "step": "setMode=default",
+    "meta": {
+      "minimax-code/transition": "settled"
+    }
+  },
+  {
+    "step": "prompt.toolcall",
+    "stop": "end_turn",
+    "frames": 6,
+    "kinds": {
+      "tool_start": 1,
+      "tool_update": 3,
+      "tool_end": 1,
+      "text": 1
+    }
+  },
+  {
+    "step": "session/list",
+    "count": 4,
+    "first": {
+      "field_meta": null,
+      "cwd": "/root/workspace/qwenpaw-upstream",
+      "session_id": "mvs_87cba196829542d59d392391ba8f22cc",
+      "title": null,
+      "updated_at": "2026-10-01T11:44:32.390Z"
+    }
+  },
+  {
+    "step": "session/close",
+    "ok": true
+  }
+]
