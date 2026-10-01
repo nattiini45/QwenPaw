@@ -181,6 +181,55 @@ PROVIDER_CATALOG = (
             ],
         ),
     ),
+    ProviderCatalogItem(
+        "minimax",
+        "MiniMax Code",
+        False,
+        HarnessCapabilities(
+            authentication=True,
+            model_selection=True,
+            reasoning_effort=True,
+            reasoning_stream=True,
+            tool_stream=True,
+            session_resume=True,
+            attachments=True,
+            qwenpaw_mcp_projection=True,
+            qwenpaw_skills_projection=False,
+            provider_skills_discovery=False,
+            provider_mcp_discovery=False,
+            mcp_tool_allowlist=False,
+            context_usage=True,
+            commands=[],
+            approval_presets=[
+                HarnessApprovalPreset(
+                    id="ask",
+                    name="Ask before actions",
+                    description=(
+                        "Route mcode permission prompts to the QwenPaw "
+                        "approval queue."
+                    ),
+                    settings={"permission_mode": "default"},
+                ),
+                HarnessApprovalPreset(
+                    id="auto",
+                    name="Automatic",
+                    description=(
+                        "mcode permission engine auto-approves safe actions."
+                    ),
+                    settings={"permission_mode": "auto"},
+                ),
+                HarnessApprovalPreset(
+                    id="full-access",
+                    name="Full access",
+                    description=(
+                        "Skip permission checks (bypassPermissions). "
+                        "Dangerous."
+                    ),
+                    settings={"permission_mode": "bypassPermissions"},
+                ),
+            ],
+        ),
+    ),
 )
 
 
@@ -198,7 +247,7 @@ def adapter_config_key(
 ) -> tuple[Any, ...]:
     """Return settings that require recreating one provider adapter."""
     values = settings or {}
-    if provider_id in {"codex", "qoder"}:
+    if provider_id in {"codex", "qoder", "minimax"}:
         return (str(values.get("binary") or "").strip(),)
     return ()
 
@@ -221,6 +270,15 @@ def create_adapter(
                 raise
             return MissingDependencyAdapter("qoder", "Qoder")
         return QoderAdapter(state_dir=state_dir, binary=binary)
+    if provider_id == "minimax":
+        binary = str((settings or {}).get("binary") or "").strip() or None
+        try:
+            from .minimax.adapter import MiniMaxAdapter
+        except ModuleNotFoundError as exc:
+            if exc.name != "acp":
+                raise
+            return MissingDependencyAdapter("minimax", "MiniMax Code")
+        return MiniMaxAdapter(state_dir=state_dir, binary=binary)
     raise ValueError(f"Unsupported third-party agent backend: {provider_id}")
 
 
