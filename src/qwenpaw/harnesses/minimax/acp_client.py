@@ -452,6 +452,12 @@ class McodeAcpClient:
                     command,
                     "acp",
                     env=environment,
+                    # mcode emits large single-line JSON frames (skills/command
+                    # rosters, history replay); the asyncio default 64 KiB
+                    # readline limit kills the receive loop (LimitOverrunError,
+                    # verified live 2026-10-01). Mirror the delegated-agent
+                    # path's stdio_buffer_limit_bytes default (50 MiB).
+                    transport_kwargs={"limit": 50 * 1024 * 1024},
                 ),
             )
             initialized = await conn.initialize(
